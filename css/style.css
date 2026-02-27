@@ -1,92 +1,133 @@
-/* ===== Base Reset & Typography ===== */
+/* ===== Base Reset ===== */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  color: #2c3e50;
-  background: #fff;
+  font-family: "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  color: #333;
+  background: #f0f0f0;
   line-height: 1.7;
 }
 
-/* ===== Layout ===== */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 24px;
+a {
+  color: #862633;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6b1d28;
+  text-decoration: underline;
+}
+
+/* ===== Header ===== */
+.site-header {
+  background: #862633;
+  color: #fff;
+  padding: 30px 0 20px;
+  text-align: center;
+}
+
+.site-header .site-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.site-header .site-title a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-header .site-description {
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-top: 4px;
+  color: #f0d0d4;
 }
 
 /* ===== Navigation ===== */
 nav {
-  border-bottom: 1px solid #e2e8f0;
-  padding: 20px 0;
-  margin-bottom: 48px;
+  background: #862633;
+  border-top: 1px solid #a03040;
+  padding: 0;
+  text-align: center;
 }
 
-nav .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-nav .site-name {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #1a2332;
-  text-decoration: none;
-}
-
-nav .nav-links {
-  display: flex;
-  gap: 32px;
+nav ul {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 0;
 }
 
-nav .nav-links a {
-  text-decoration: none;
-  color: #4a5568;
+nav ul li a {
+  display: block;
+  color: #fff;
+  padding: 12px 24px;
   font-size: 0.95rem;
-  transition: color 0.2s;
+  text-decoration: none;
+  transition: background 0.2s;
 }
 
-nav .nav-links a:hover,
-nav .nav-links a.active {
-  color: #2c5282;
+nav ul li a:hover,
+nav ul li a.active {
+  background: #a03040;
+  text-decoration: none;
 }
 
 /* ===== Main Content ===== */
-main {
-  padding-bottom: 80px;
+.content-area {
+  max-width: 960px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 40px 50px;
+}
+
+/* ===== Home Page ===== */
+.welcome-section {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.welcome-section .photo {
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.85rem;
+  overflow: hidden;
+}
+
+.welcome-section .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-section .bio {
+  flex: 1;
 }
 
 h1 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: #1a2332;
-  margin-bottom: 8px;
-}
-
-h2 {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #1a2332;
-  margin-top: 48px;
+  font-size: 1.5rem;
+  color: #333;
   margin-bottom: 16px;
 }
 
-h3 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #2c3e50;
-  margin-top: 32px;
+h2 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-top: 30px;
   margin-bottom: 12px;
 }
 
@@ -94,168 +135,55 @@ p {
   margin-bottom: 16px;
 }
 
-a {
-  color: #2c5282;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* ===== Home Page ===== */
-.intro {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  margin-bottom: 40px;
-}
-
-.intro .photo {
-  flex-shrink: 0;
-  width: 180px;
-  height: 220px;
-  background: #e2e8f0;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #a0aec0;
-  font-size: 0.85rem;
-}
-
-.intro .photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.intro .bio {
-  flex: 1;
-}
-
-.intro .bio .subtitle {
-  color: #4a5568;
-  font-size: 1rem;
-  margin-bottom: 16px;
-}
-
-/* ===== Publication List ===== */
-.pub-list {
-  list-style: none;
-}
-
-.pub-list li {
-  margin-bottom: 24px;
-  padding-left: 0;
-}
-
-.pub-list .pub-title {
-  font-weight: 600;
-  color: #1a2332;
-}
-
-.pub-list .pub-authors {
-  color: #4a5568;
-  font-size: 0.95rem;
-}
-
-.pub-list .pub-journal {
-  font-style: italic;
-  color: #4a5568;
-  font-size: 0.95rem;
-}
-
-/* ===== CV Page ===== */
-.cv-section {
-  margin-bottom: 40px;
-}
-
-.cv-entry {
+/* ===== Publications ===== */
+.pub-entry {
   margin-bottom: 20px;
 }
 
-.cv-entry .cv-title {
-  font-weight: 600;
-  color: #1a2332;
+.pub-entry strong a {
+  color: #862633;
 }
 
-.cv-entry .cv-detail {
-  color: #4a5568;
-  font-size: 0.95rem;
+.pub-entry strong a:hover {
+  color: #6b1d28;
+  text-decoration: underline;
 }
 
-.cv-entry .cv-year {
-  color: #718096;
-  font-size: 0.9rem;
-}
-
-/* ===== Contact ===== */
-.contact-info {
-  margin-top: 32px;
-  padding: 24px;
-  background: #f7fafc;
-  border-radius: 6px;
-}
-
-.contact-info p {
-  margin-bottom: 8px;
-}
-
-/* ===== Research Interests Tags ===== */
-.interests {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 12px;
-}
-
-.interests span {
-  background: #f7fafc;
-  border: 1px solid #e2e8f0;
-  padding: 6px 14px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  color: #4a5568;
+/* ===== Section Headers (Research Categories) ===== */
+.section-header {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-top: 36px;
+  margin-bottom: 16px;
 }
 
 /* ===== Footer ===== */
 footer {
-  border-top: 1px solid #e2e8f0;
-  padding: 24px 0;
   text-align: center;
-  color: #a0aec0;
+  padding: 20px 0;
+  color: #999;
   font-size: 0.85rem;
 }
 
 /* ===== Responsive ===== */
-@media (max-width: 640px) {
-  nav .container {
-    flex-direction: column;
-    gap: 12px;
+@media (max-width: 700px) {
+  .content-area {
+    margin: 0;
+    padding: 24px 20px;
   }
 
-  nav .nav-links {
-    gap: 24px;
-  }
-
-  .intro {
+  .welcome-section {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 
-  .intro .photo {
-    width: 150px;
-    height: 185px;
+  nav ul {
+    flex-direction: column;
   }
 
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  h2 {
-    font-size: 1.15rem;
+  nav ul li a {
+    padding: 10px 20px;
   }
 }
