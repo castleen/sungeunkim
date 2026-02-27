@@ -160,11 +160,6 @@ p {
   margin-bottom: 16px;
 }
 
-/* ===== Home Page Recent Publications ===== */
-.content-area p > a > strong {
-  color: #862633;
-}
-
 /* ===== Publications ===== */
 .pub-entry {
   margin-bottom: 16px;
