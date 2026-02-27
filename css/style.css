@@ -79,7 +79,7 @@ nav ul li a.active {
 
 /* ===== Main Content ===== */
 .content-area {
-  max-width: 1250px;
+  max-width: 1050px;
   margin: 30px auto;
   background: #fff;
   padding: 40px 50px;
@@ -110,11 +110,12 @@ nav ul li a.active {
   font-size: 0.8rem;
   color: #666;
   line-height: 1.4;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .welcome-section .photo-links {
-  margin-top: 4px;
+  margin-top: 0;
+  margin-bottom: 2px;
   font-size: 0.9rem;
 }
 
