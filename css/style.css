@@ -183,13 +183,13 @@ details {
 
 details summary {
   font-size: 0.78rem;
-  color: #862633;
+  color: #999;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  border: 1.5px solid #862633;
+  border: 1.5px solid #999;
   border-radius: 3px;
-  padding: 1px 8px;
+  padding: 0 8px;
   transition: background 0.15s, color 0.15s;
   list-style: none;
 }
@@ -211,13 +211,13 @@ details summary::before {
 }
 
 details summary:hover {
-  background: #862633;
+  background: #999;
   color: #fff;
   text-decoration: none;
 }
 
 details[open] summary {
-  background: #862633;
+  background: #999;
   color: #fff;
 }
 
@@ -233,11 +233,11 @@ details .abstract-text {
 /* ===== Publisher Page Button ===== */
 a.pub-link {
   font-size: 0.78rem;
-  color: #862633;
+  color: #999;
   font-weight: 600;
-  border: 1.5px solid #862633;
+  border: 1.5px solid #999;
   border-radius: 3px;
-  padding: 1px 8px;
+  padding: 0 8px;
   text-decoration: none;
   display: inline-block;
   transition: background 0.15s, color 0.15s;
@@ -246,7 +246,7 @@ a.pub-link {
 }
 
 a.pub-link:hover {
-  background: #862633;
+  background: #999;
   color: #fff;
   text-decoration: none;
 }
