@@ -176,20 +176,30 @@ p {
 
 /* ===== Abstract Toggle ===== */
 details {
-  margin-top: 4px;
+  margin-top: 1px;
 }
 
 details summary {
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   color: #862633;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
+  border: 1.5px solid #862633;
+  border-radius: 3px;
+  padding: 1px 8px;
+  transition: background 0.15s, color 0.15s;
 }
 
 details summary:hover {
-  color: #6b1d28;
-  text-decoration: underline;
+  background: #862633;
+  color: #fff;
+  text-decoration: none;
+}
+
+details[open] summary {
+  background: #862633;
+  color: #fff;
 }
 
 details .abstract-text {
