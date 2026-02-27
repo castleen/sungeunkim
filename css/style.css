@@ -9,7 +9,7 @@ body {
   font-family: "Segoe UI", Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
   color: #333;
   background: #f0f0f0;
-  line-height: 1.7;
+  line-height: 1.5;
 }
 
 a {
@@ -177,7 +177,7 @@ p {
 /* ===== Co-author Names ===== */
 .coauthor {
   font-size: 0.85em;
-  color: #999;
+  color: #777;
 }
 
 /* ===== Section Headers (Research Categories) ===== */
