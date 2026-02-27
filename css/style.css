@@ -179,7 +179,7 @@ p {
 details {
   margin-top: 0;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: baseline;
   margin-left: 4px;
 }
 
@@ -189,12 +189,10 @@ details summary {
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
-  border: 1.5px solid #999;
-  border-radius: 3px;
-  padding: 0 8px;
-  transition: background 0.15s, color 0.15s;
+  padding: 0;
+  transition: color 0.15s;
   list-style: none;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 details summary::-webkit-details-marker {
@@ -214,14 +212,12 @@ details summary::before {
 }
 
 details summary:hover {
-  background: #999;
-  color: #fff;
-  text-decoration: none;
+  color: #666;
+  text-decoration: underline;
 }
 
 details[open] summary {
-  background: #999;
-  color: #fff;
+  color: #666;
 }
 
 details .abstract-text {
@@ -238,20 +234,17 @@ a.pub-link {
   font-size: 0.78rem;
   color: #999;
   font-weight: 600;
-  border: 1.5px solid #999;
-  border-radius: 3px;
-  padding: 0 8px;
+  padding: 0;
   text-decoration: none;
   display: inline-block;
-  transition: background 0.15s, color 0.15s;
+  transition: color 0.15s;
   margin-left: 4px;
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 a.pub-link:hover {
-  background: #999;
-  color: #fff;
-  text-decoration: none;
+  color: #666;
+  text-decoration: underline;
 }
 
 a.pub-link::before {
