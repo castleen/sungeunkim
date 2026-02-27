@@ -178,7 +178,9 @@ p {
 /* ===== Abstract Toggle ===== */
 details {
   margin-top: 0;
-  display: inline;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
 }
 
 details summary {
@@ -192,6 +194,7 @@ details summary {
   padding: 0 8px;
   transition: background 0.15s, color 0.15s;
   list-style: none;
+  vertical-align: middle;
 }
 
 details summary::-webkit-details-marker {
