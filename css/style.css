@@ -191,6 +191,28 @@ details summary {
   border-radius: 3px;
   padding: 1px 8px;
   transition: background 0.15s, color 0.15s;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border-left: 4px solid currentColor;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  transition: transform 0.15s;
+  vertical-align: middle;
+}
+
+details[open] summary::after {
+  transform: rotate(90deg);
 }
 
 details summary:hover {
