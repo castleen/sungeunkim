@@ -181,11 +181,13 @@ details {
   display: inline-block;
   vertical-align: baseline;
   margin-left: 4px;
+  position: relative;
+  top: -1px;
 }
 
 details summary {
-  font-size: 0.78rem;
-  color: #999;
+  font-size: 0.85rem;
+  color: #777;
   cursor: pointer;
   display: inline-block;
   font-weight: 600;
@@ -212,12 +214,12 @@ details summary::before {
 }
 
 details summary:hover {
-  color: #666;
+  color: #555;
   text-decoration: underline;
 }
 
 details[open] summary {
-  color: #666;
+  color: #555;
 }
 
 details .abstract-text {
@@ -231,8 +233,8 @@ details .abstract-text {
 
 /* ===== Publisher Page Button ===== */
 a.pub-link {
-  font-size: 0.78rem;
-  color: #999;
+  font-size: 0.85rem;
+  color: #777;
   font-weight: 600;
   padding: 0;
   text-decoration: none;
@@ -240,10 +242,12 @@ a.pub-link {
   transition: color 0.15s;
   margin-left: 4px;
   vertical-align: baseline;
+  position: relative;
+  top: -1px;
 }
 
 a.pub-link:hover {
-  color: #666;
+  color: #555;
   text-decoration: underline;
 }
 
