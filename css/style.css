@@ -230,12 +230,8 @@ details .abstract-text {
   padding-left: 2px;
 }
 
-/* ===== Button Row (Abstract + Publisher Page) ===== */
-.pub-buttons {
-  margin-top: 3px;
-}
-
-.pub-buttons a.pub-link {
+/* ===== Publisher Page Button ===== */
+a.pub-link {
   font-size: 0.78rem;
   color: #862633;
   font-weight: 600;
@@ -249,13 +245,13 @@ details .abstract-text {
   vertical-align: middle;
 }
 
-.pub-buttons a.pub-link:hover {
+a.pub-link:hover {
   background: #862633;
   color: #fff;
   text-decoration: none;
 }
 
-.pub-buttons a.pub-link::before {
+a.pub-link::before {
   content: "";
   display: inline-block;
   width: 11px;
