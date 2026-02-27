@@ -13,12 +13,12 @@ body {
 }
 
 a {
-  color: #862633;
+  color: #444;
   text-decoration: none;
 }
 
 a:hover {
-  color: #6b1d28;
+  color: #222;
   text-decoration: underline;
 }
 
@@ -166,11 +166,11 @@ p {
 }
 
 .pub-entry strong a {
-  color: #862633;
+  color: #444;
 }
 
 .pub-entry strong a:hover {
-  color: #6b1d28;
+  color: #222;
   text-decoration: underline;
 }
 
@@ -184,9 +184,11 @@ p {
 .section-header {
   font-size: 1.15rem;
   font-weight: 700;
-  color: #2c2c2c;
+  color: #862633;
   margin-top: 36px;
   margin-bottom: 16px;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
 }
 
 /* ===== Footer ===== */
