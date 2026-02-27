@@ -132,10 +132,10 @@ nav ul li a.active {
 }
 
 .welcome-section .photo img {
-  width: 140%;
-  height: 140%;
+  width: 115%;
+  height: 115%;
   object-fit: cover;
-  object-position: center 15%;
+  object-position: center 20%;
 }
 
 .welcome-section .bio {
