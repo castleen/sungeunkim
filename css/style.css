@@ -85,6 +85,40 @@ nav ul li a.active {
   padding: 40px 50px;
 }
 
+/* ===== CV Embed ===== */
+.cv-page .content-area {
+  max-width: 1150px;
+}
+
+.cv-download {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.cv-download a {
+  display: inline-block;
+  background: #862633;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.cv-download a:hover {
+  background: #a03040;
+  color: #fff;
+  text-decoration: none;
+}
+
+.cv-embed {
+  width: 100%;
+  height: 90vh;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
 
 /* ===== Home Page ===== */
 .welcome-section {
