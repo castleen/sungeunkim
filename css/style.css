@@ -181,6 +181,7 @@ nav ul li a.active {
 
 .welcome-section .bio a {
   color: #862633;
+  font-weight: 700;
 }
 
 .welcome-section .bio a:hover {
@@ -293,6 +294,10 @@ a.pub-link {
 a.pub-link:hover {
   color: #555;
   text-decoration: underline;
+}
+
+a.pub-pdf::before {
+  display: none;
 }
 
 a.pub-link::before {
